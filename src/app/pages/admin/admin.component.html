@@ -1,0 +1,49 @@
+<div class="container">
+    <h2>🎬 Panneau d'administration</h2>
+  
+    <form (ngSubmit)="addFilm()" class="form-container">
+      <h3>➕ Ajouter un film</h3>
+      <input type="text" [(ngModel)]="newFilm.title" placeholder="Titre" name="title" required [ngModelOptions]="{standalone: true}">
+      <input type="text" [(ngModel)]="newFilm.imageUrl" placeholder="URL de l'image" name="imageUrl" required [ngModelOptions]="{standalone: true}">
+      <input type="text" [(ngModel)]="newFilm.genre" placeholder="Genre" name="genre" required [ngModelOptions]="{standalone: true}">
+      <textarea [(ngModel)]="newFilm.description" placeholder="Description" name="description" required [ngModelOptions]="{standalone: true}"></textarea>
+      <input type="date" [(ngModel)]="newFilm.releaseDate" name="releaseDate" required [ngModelOptions]="{standalone: true}">
+      <button type="submit">Ajouter</button>
+    </form>
+  
+    <div *ngIf="successMessage" class="success-message">{{ successMessage }}</div>
+    
+    <hr>
+  
+    <h3>🎥 Liste des films</h3>
+    <div class="film-list">
+      <div class="film-card" *ngFor="let film of films">
+        <img [src]="film.imageUrl" alt="Film Image">
+        <h4>{{ film.title }}</h4>
+        <p><strong>Genre :</strong> {{ film.genre }}</p>
+        <p>{{ film.description }}</p>
+        <p><strong>Date de sortie :</strong> {{ film.releaseDate | date }}</p>
+        <p>❤️ {{ film.likes }} Likes</p>
+        <button *ngIf="film.id" (click)="deleteFilm(film.id)">🗑 Supprimer</button>
+        <button (click)="editMode(film)">✏ Modifier</button>
+      </div>
+    </div>
+  
+    <hr>
+
+    <div *ngIf="editFilm" class="edit-container">
+      <h3>🖊 Modifier un film</h3>
+      <input type="text" [(ngModel)]="editFilm.title" name="title">
+      <input type="text" [(ngModel)]="editFilm.imageUrl" name="imageUrl">
+      <input type="text" [(ngModel)]="editFilm.genre" name="genre">
+      <textarea [(ngModel)]="editFilm.description" name="description"></textarea>
+      <input type="date" [(ngModel)]="editFilm.releaseDate" name="releaseDate">
+      <button (click)="updateFilm()">Sauvegarder</button>
+      <button (click)="cancelEdit()">Annuler</button>
+    </div>
+  
+    <div *ngIf="editSuccessMessage" class="success-message">{{ editSuccessMessage }}</div>
+  
+    <div *ngIf="deleteSuccessMessage" class="success-message">{{ deleteSuccessMessage }}</div>
+  </div>
+  

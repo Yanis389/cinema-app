@@ -1,0 +1,200 @@
+/* Conteneur général */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titres */
+  h2, h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulaire de création/édition */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+  
+  .form-container input:focus,
+  .form-container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Liste des films */
+  .film-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  /* Carte de film */
+  .film-card {
+    width: 260px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .film-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .film-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .film-card .card-body {
+    padding: 15px;
+  }
+  
+  .film-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .film-card .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Boutons dans la carte film */
+  .film-card button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .film-card .delete {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .film-card .edit {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .film-card button:hover {
+    opacity: 0.8;
+  }
+  
+/* Container pour la modification d'un film */
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Champs de saisie dans la modification */
+.edit-container input,
+.edit-container textarea {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+/* Focus sur les champs de saisie */
+.edit-container input:focus,
+.edit-container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Boutons de sauvegarde et annulation */
+.edit-container button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Sauvegarder */
+.edit-container button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-container button:first-child:hover {
+    background-color: #218838;
+}
+
+/* Annuler */
+.edit-container button:last-child {
+    background-color: #6c757d;
+    color: white;
+}
+
+.edit-container button:last-child:hover {
+    background-color: #5a6268;
+}
+
+/* Style des messages de succès */
+.success-message {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+  

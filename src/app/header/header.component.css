@@ -1,0 +1,32 @@
+/* Pour améliorer la lisibilité des liens */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    padding: 10px 15px;
+  }
+  
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Pour le bouton de menu mobile */
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+  /* Pour la couleur de fond et les espacements */
+  .navbar {
+    background-color: #343a40 !important;  /* Couleur sombre */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Espacement entre les éléments de la navbar */
+  .navbar-nav {
+    margin-left: auto;
+  }
+  

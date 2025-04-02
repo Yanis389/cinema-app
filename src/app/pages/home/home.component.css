@@ -1,0 +1,91 @@
+/* Global container styling */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Card styling */
+  .card {
+    margin: 15px;
+    width: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Card body styling */
+  .card-body {
+    padding: 15px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Card title styling */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  /* Card text styling */
+  .card-text {
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 10px;
+  }
+  
+  /* Release date and likes styling */
+  .card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  /* Button styling */
+  button.btn {
+    margin-top: 15px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Row styling */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Column styling */
+  .col-md-4 {
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    box-sizing: border-box;
+  }
+  

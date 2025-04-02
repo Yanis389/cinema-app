@@ -1,0 +1,224 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Conteneur général */
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titre des pages */
+  h2, h3 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  /* Formulaire */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container input,
+  .form-container textarea {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+  }
+  
+  .form-container input:focus,
+  .form-container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Liste des films */
+  .film-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Carte de film */
+  .film-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .film-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .film-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .film-card .card-body {
+    padding: 10px;
+  }
+  
+  .film-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .film-card .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Boutons dans la carte film */
+  .film-card button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .film-card button:hover {
+    opacity: 0.8;
+  }
+  
+  .film-card .delete {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .film-card .edit {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  /* Mode édition */
+  .edit-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Header et footer */
+  app-header, app-footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  app-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Cartes film sur la page d'accueil */
+  .card {
+    margin: 15px;
+    width: 18rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  button.btn {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Colonnes de films */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .col-md-4 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Footer */
+  router-outlet {
+    margin: 20px;
+  }
+  
